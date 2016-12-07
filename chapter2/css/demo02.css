@@ -1,0 +1,46 @@
+/***
+层次选择器
+	1.后代选择器	E F
+	2.子选择器	E > F
+	3.相邻兄弟选择器	E + F
+	4.通用选择器	E ~ F
+***/
+
+*{margin:0;padding:0;}
+body{
+	width:300px;
+	margin:0 auto;
+}
+div{
+	margin:5px;
+	padding:5px;
+	border:1px solid #ccc;
+}
+
+/**后代选择器*/
+div div{
+	background: red;
+}
+
+/**子元素选择器*/
+body > div{
+	background: pink;
+}
+
+/*相邻兄弟选择器*/
+.active + div{
+	background-color: lime;
+}
+
+/*通用选择器,用于选择某兄弟后面的所有兄弟元素*/
+.active ~ div{
+	background: yellow;
+}
+
+
+
+
+
+
+
+

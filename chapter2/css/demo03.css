@@ -1,0 +1,36 @@
+/**
+
+伪类选择器书写格式：E:pseuo-class{property:value;};	必须以：开头
+
+动态伪类选择器包含：
+link：超链接未被访问过
+visited：超链接已被访问过
+active：匹配元素被激活
+hover：鼠标停留在元素上
+focus：元素获得焦点时
+*/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+.btn:hover{
+	background: red;
+}
+
+.btn:link{
+	background: green;
+}
+
+.btn:active{
+	background: yellow;
+}
+
+.btn:visited{
+	background: grey;
+}
+
+.btn:focus{
+	background: blue;
+}
