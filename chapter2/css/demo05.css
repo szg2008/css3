@@ -1,0 +1,18 @@
+/**
+语言伪类选择器：E:lang;
+通过html标签的lang属性进行设置语言，默认是en
+**/
+
+:lang(en){
+	quotes:'"' '"';
+}
+:lang(en) q{
+	background: red;
+};
+
+:lang(fr){
+	quotes:'<<' '>>';
+};
+:lang(fr) q{
+	background: green;
+};
