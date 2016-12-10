@@ -1,0 +1,81 @@
+/**
+伪元素：
+	::first-letter
+	::first-line
+	::selection
+	::before
+	::after;
+**/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+/*::first-letter:文本块的第一个首字母**/
+p:first-child::first-letter{
+	float:left;
+	color:orange;
+	padding:4px 8px 0 3px;
+	font:16px/14px Georgia;
+}
+
+/**::first-line:匹配文本的第一行*/
+p:last-child::first-line{
+	font:italic 16px/18px Georgia;
+	color:red;
+}
+/**::selection：匹配突出显示的文本***/
+p::selection{
+	background-color: green;
+}
+/*:before,:after**/
+.box h3{
+  text-align:center;
+  position:relative;
+  top:80px;
+}
+.box {
+  width:70%;
+  height:200px;
+  background:#FFF;
+  margin:40px auto;
+}
+
+.effect{
+  position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+			box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect::before, .effect::after{
+    content:"111";
+	position:absolute; 
+	z-index:-1;
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+	box-shadow:0 0 20px rgba(0,0,0,0.8);
+	top:50%;
+	bottom:0;
+	left:10px;
+	right:10px;
+	-moz-border-radius:100px / 10px;
+	border-radius:100px / 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
