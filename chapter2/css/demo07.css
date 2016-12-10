@@ -1,0 +1,60 @@
+/**
+否定伪类选择器
+	语法：:not();
+
+***/
+*{
+	margin:0;;
+	padding:0;
+}
+ul{
+	width:690px;
+	margin:20px auto;
+	letter-spacing: -4px;
+	word-spacing: -4px;
+	font-size: 0px;
+}
+li{
+	font-size: 16px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	display: inline-block;
+	*display:inline;
+	zoom:1;
+	list-style: none outside none;
+	margin: 5px;
+}
+img{
+	width: 128px;
+	height: 128px;
+}
+
+
+/*.gallery li:nth-child(2){
+	-webkit-filter:grayscale(1);
+}
+.gallery li:nth-child(3){
+	-webkit-sepia(1);
+}
+.gallery li:nth-child(4){
+	-webkit-saturate(0.5);
+}
+.gallery li:nth-child(5){
+	-webkit-hue-rarate(90deg);
+}
+.gallery li:nth-child(6){
+	-webkit-invert(1);
+}*/
+
+.gallery:hover li:not(:hover){
+	-webkit-filter:blur(2px) grayscale(1);
+	opacity: .5;
+}
+
+
+
+
+
+
+
+

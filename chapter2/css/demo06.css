@@ -1,0 +1,24 @@
+/**
+UI元素状态伪类选择器
+	UI元素的状态一般包括：启用、禁用、选中、未选中、获得焦点、失去焦点、锁定和待机
+	语法：E:enabled、E:disabled、E:checked;	;	
+**/
+input,textarea,select{
+	outline: none;
+}
+select{
+	appearance:none;
+}
+input[type='text']:focus{
+	border-color: red;
+};
+
+select:disabled{
+	border-color:blue;
+	background-color: pink;
+}
+
+input[type='checkbox']:checked{
+	border: 1px solid yellow;
+	background-color: red;
+};
