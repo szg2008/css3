@@ -1,0 +1,139 @@
+/**
+结构伪类选择器
+first-child,last-child,nth-child,
+nth-last-child,nth-of-type,nth-last-of-type,
+first-of-type,last-of-type,
+only-child,only-of-type,empty
+**/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+ul{
+	margin:50px auto;
+	width:450px;
+	list-style: none outside none;
+	/*height: 20px;*/
+}
+
+li{
+	display: inline-block;
+	margin:5px;
+	padding:5px;
+	width: 60px;
+	height: 60px;
+	font:bold 30px/60px arial;
+	background: #000;
+	color:#fff;
+	border-radius: 50px;
+	text-align: center;
+}
+
+/**first-child：第一个**/
+ul>li:first-child{
+	background-color: red;
+}
+
+/**last-child：最后一个**/
+ul>li:last-child{
+	background-color: blue;
+}
+
+/***
+nth-child(n):
+	用来定位某个父元素的一个或者多个特定的子元素。
+	其中，n可以是具体的数字，可以是表达式
+	例如：3,2n+1,2n,n+5,-n+5.
+	默认都是从第一个元素进行匹配，如果表达式的值是0或者负数，是不进行匹配的。
+需要注意的是：如果选择器选择的元素前面有其他元素。
+			例如，选择的是第二个li元素，这时，在li元素前面有个div，这时选择器将不会起到选择的作用。	
+***/
+ul>li:nth-child(2){
+	background-color: yellow;
+}
+
+/**
+nth-last-child(n):和nth－child(n)作用是一样的，有一个区别就是起始的位置不一样，这个是从列表的最后一个元素开始匹配。
+**/
+ul>li:nth-last-child(2){
+	background-color: green;
+}
+
+/**
+nth-of-type(n):
+	和nth-child(n)类似，不同的是nth-child选择的是父元素的第n个元素，没有任何类型的限制，而nth-of-type，不仅选择的是第n个元素，并且还是选择器中指定的元素类型;
+	例如：选择的第2个元素，并且指定是li，li前面还有一个div元素，nth-child选择是没有效果的，因为它在第2个位置上找不到对应的li元素，而nth-of-type则能正确匹配
+**/
+ul>li:nth-of-type(3){
+	background-color: pink;
+}
+/**
+nth-last-of-type(n):
+	和nth-of-type(n)类似，一个是从后往前排，一个是从前往后排;
+**/
+ul>li:nth-last-of-type(3){
+	background-color: grey;
+}
+/*
+first-of-type和last-of-type:
+	类似first-child和last-child，同样也是匹配指定类型的元素;
+**/
+
+/**
+only-child:
+	表示一个元素是它父元素的唯一元素;
+**/
+ul>li:only-child{
+	background-color: orange;
+}
+
+/**
+only-of-type:
+	和only-child类似，不同的是它也匹配类型元素;
+**/
+ul>li:only-of-type{
+	background-color: orange;
+}
+
+/*
+empty:
+	选择没有任何内容的元素;
+**/
+ul:empty{
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
