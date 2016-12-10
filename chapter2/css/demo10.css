@@ -1,0 +1,77 @@
+/*
+属性选择器:
+	E[attr],E[attr=val],E[attr|=val],
+	E[attr~=val],E[attr*=val],E[attr^=val]
+	E[attr$=val];
+**/
+*{
+	margin:0;
+	padding: 0;
+}
+
+ul{
+	margin:50px auto;
+	width:450px;
+	list-style: none outside none;
+}
+
+li{
+	display: inline-block;
+	margin:5px;
+	padding:5px;
+	width: 60px;
+	height: 60px;
+	font:bold 30px/60px arial;
+	background: #000;
+	color:#fff;
+	border-radius: 50px;
+	text-align: center;
+}
+
+/***E[attr]:有某个属性的元素*/
+ul>li[class]{
+	background-color: #ccc;
+}
+
+/**E[attr=val]:设置了attr，并且值为val*/
+ul>li[id='first']{
+	background-color: red;
+}
+
+/**E[attr|=val]:设置了attr属性，并且值是val或者是以val－开头的元素**/
+ul>li[id|='second']{
+	background-color: yellow;
+}
+
+/*E[attr~=val]:设置了attr属性，并且属性值中有val的元素，属性可以有多个值，每个值之间用空格隔开，只要其中一个值等于val就可以匹配**/
+ul>li[id~='third']{
+	background-color: pink;
+}
+
+/**E[attr*=val]:设置了attr属性，并且属性值中包含val字符串就可以匹配**/
+ul>li[id*='forth']{
+	background-color: green;
+}
+
+/*E[attr^=val]:设置了attr属性，并且是以val开头的元素**/
+ul>li[id^='fifth']{
+	background-color: blue;
+}
+
+/*E[attr$=val]:设置了attr属性，并且是以val结尾的元素**/
+ul>li[id$='sixth']{
+	background-color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
