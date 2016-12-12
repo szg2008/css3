@@ -1,0 +1,81 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	margin:50px auto;
+	width:450px;
+	list-style: none outside none;
+}
+li{
+	display: inline-block;
+	margin:5px;
+	padding:5px;
+	width: 60px;
+	height: 60px;
+	font:bold 30px/60px arial;
+	/*background: #736767;*/
+	color:#000;
+	border-radius: 50px;
+	text-align: center;
+	border:1px solid #ccc;
+}
+ul>li:first-child{
+	border:2px dotted red;
+}
+ul>li:nth-child(2){
+	border:2px dashed green;
+}
+ul>li:nth-of-type(3){
+	border:2px double yellow;
+}
+ul>li:last-of-type{
+	border:2px groove pink;
+}
+ul>li:nth-last-child(2){
+	border:2px ridge grey;
+}
+ul>li:nth-child(4){
+	border: 2px inset orange;
+}
+ul{
+	background-color: #a0b3d6;
+}
+/**
+使用css3版本的border-color，如果使用缩写语法，将不会看到任何不同的效果，必须分开来写。
+border-color可以支持设置多彩边框，颜色的数量和设置的边框的像素有关系
+
+**/
+ul>li:nth-child(5){
+	border:5px solid #ccc;
+	-webkit-border-top-colors:#111 #fac #dec #ccc #87f #19a #44d;
+	-webkit-border-right-colors:#111 #fac #dec #ccc #87f #19a #44d;
+	-webkit-border-bottom-colors:#111 #fac #dec #ccc #87f #19a #44d;
+	-webkit-border-left-colors:#111 #fac #dec #ccc #87f #19a #44d;
+	border-top-colors:#111 #fac #dec #ccc #87f #19a #44d;
+	border-right-colors:#111 #fac #dec #ccc #87f #19a #44d;
+	border-bottom-colors:#111 #fac #dec #ccc #87f #19a #44d;
+	border-left-colors:#111 #fac #dec #ccc #87f #19a #44d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
