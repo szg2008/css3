@@ -56,6 +56,10 @@ ul>li:nth-child(5){
 	border-right-colors:#111 #fac #dec #ccc #87f #19a #44d;
 	border-bottom-colors:#111 #fac #dec #ccc #87f #19a #44d;
 	border-left-colors:#111 #fac #dec #ccc #87f #19a #44d;
+	-moz-border-top-colors:#111 #fac #dec #ccc #87f #19a #44d;
+	-moz-border-right-colors:#111 #fac #dec #ccc #87f #19a #44d;
+	-moz-border-bottom-colors:#111 #fac #dec #ccc #87f #19a #44d;
+	-moz-border-left-colors:#111 #fac #dec #ccc #87f #19a #44d;
 }
 
 

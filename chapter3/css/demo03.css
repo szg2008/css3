@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+}
+/**
+    1em == 16px 大约相等
+    在使用border-image属性时，最好使用的img也是可以很明显的分成九宫格的图片
+    边框本身也被切分成九宫格
+    然后图片和边框的九宫格分别对应，并按照设置的边框宽度自动缩放图片
+    按照设置的图片展示方式(重复或者平铺)进行展示
+    演示设置的地址：http://image.zhangxinxu.com/flash/blog/201001/border_image.swf
+***/
+.border-image{
+    margin-bottom:50px;
+    width:150px;
+    height:100px;
+    border:1em solid orange;
+    -webkit-border-image:url('../img/1.png') 31 repeat;
+    /*border-image:url('../img/1.png') 0 50 ;*/
+}
+
+.border-image-02{
+    margin-bottom:50px;
+    width:150px;
+    height:100px;
+    border:15px solid orange;
+}
