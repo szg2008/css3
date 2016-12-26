@@ -1,0 +1,11 @@
+*{
+	margin:0;
+	padding:0;
+}
+.border-image{
+	width:300px;
+	height:240px;
+	/*border:27px solid;*/
+	-webkit-border-image:url(../img/01.png) 100;
+	/*border-image:url(../img/01.png) 27 round stretch;*/
+}
