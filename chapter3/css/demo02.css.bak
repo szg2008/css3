@@ -109,5 +109,3 @@ border-radius:圆角效果
 	border-radius:200px/100px;
 	background-color:pink;
 }
-
-/* 综合实例 */
