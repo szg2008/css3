@@ -2,26 +2,71 @@
     margin:0;
     padding:0;
 }
+.item{
+    width:200px;
+    height:150px;
+    border-radius: 10px;
+    border:1px solid #ccc;
+    margin:20px;
+}
 /**
-    1em == 16px 大约相等
-    在使用border-image属性时，最好使用的img也是可以很明显的分成九宫格的图片
-    边框本身也被切分成九宫格
-    然后图片和边框的九宫格分别对应，并按照设置的边框宽度自动缩放图片
-    按照设置的图片展示方式(重复或者平铺)进行展示
-    演示设置的地址：http://image.zhangxinxu.com/flash/blog/201001/border_image.swf
-***/
-.border-image{
-    margin-bottom:50px;
-    width:150px;
-    height:100px;
-    border:1em solid orange;
-    -webkit-border-image:url('../img/1.png') 31 repeat;
-    /*border-image:url('../img/1.png') 0 50 ;*/
+定义元素的盒子阴影
+    可设置6个参数：
+        1.none:元素没有阴影效果
+        2.inset:阴影类型，默认是外阴影，如果值为inset，那么属于内阴影
+        3.x-offset:阴影水平偏移量
+        4.y-offset:阴影垂直偏移量
+        5.blur-radius:阴影模糊半径
+        6.spread-radius:阴影扩展半径
+        7.color:阴影颜色
+**/
+/**单边阴影效果**/
+.box-shadow1{
+    box-shadow: 0 -2px 0 red;
+}
+.box-shadow2{
+    box-shadow: -2px 0 0 red;
+}
+.box-shadow3{
+    box-shadow: 2px 0 6px green;
+}
+.box-shadow4{
+    box-shadow: 4px 0 5px -3px yellow;<!--不懂这里的参数值配置-->
 }
 
-.border-image-02{
-    margin-bottom:50px;
-    width:150px;
-    height:100px;
-    border:15px solid orange;
+/**
+四边相同的阴影效果
+    1.设置阴影模糊半径和阴影颜色
+    2.设置扩展半径和阴影颜色
+**/
+.box-shadow5{
+    box-shadow: 0 0 20px #63c;
 }
+.box-shadow6{
+    box-shadow: 0 0 20px 10px #63c;
+}
+.box-shadow7{
+    box-shadow: 0 0 20px -20px #63c;<!--阴影模糊半径等于阴影扩展半径，阴影消失-->
+}
+.box-shadow8{
+    box-shadow: 0 0 0 10px green;<!--和实线框效果一样-->
+}
+
+/**内阴影**/
+.box-shadow9{
+    box-shadow: inset 3px 3px 10px #66e;
+}
+/**多层阴影**/
+.box-shadow10{
+    box-shadow: 0 0 0 1px red,0 0 0 3px green,0 0 0 8px lime,0 0 0 12px yellow;
+}
+
+
+
+
+
+
+
+
+
+
