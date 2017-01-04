@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+}
+.item{
+    width:200px;
+    height:150px;
+    border-radius: 10px;
+    border:10px solid #ccc;
+    margin:20px;
+}
+/**
+背景的基本属性
+    background-color:背景颜色;
+    background-image:背景图片;
+    background-repeat:背景图片展示方式;
+    background-attachment:背景图片是固定还是滚动;scroll/fixed
+    background-position:背景图片位置;
+新增属性
+    background-origin:指定绘制背景图片的起点;
+    background-clip:指定背景图片的显示范围;
+    background-size:指定背景图片的尺寸大小;
+    background-break:指定内联元素的背景图片进行平铺时的循环方式;
+**/
+
+/**
+css3背景原点属性background-origin
+    决定background-position属性的参考原点，决定背景图片定位的起点
+    有三个属性值：padding-box||padding,border-box||border,content-box||content
+**/
+
+
+
+
+
+
+
+
+
+
