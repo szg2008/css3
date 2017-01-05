@@ -6,8 +6,9 @@
     width:200px;
     height:150px;
     border-radius: 10px;
-    border:10px solid #ccc;
+    border:10px dashed #ccc;
     margin:20px;
+    padding:20px;
 }
 /**
 背景的基本属性
@@ -27,7 +28,91 @@
 css3背景原点属性background-origin
     决定background-position属性的参考原点，决定背景图片定位的起点
     有三个属性值：padding-box||padding,border-box||border,content-box||content
+    如果将background-attachment设置成fixed，那么background-origin将不起作用
 **/
+.origin01{/**从边框开始作为起点**/
+    background: orange url('../img/1.jpg') no-repeat left top;
+    -webkit-background-origin:border-box;
+    -moz-background-origin:border-box;
+    -o-background-origin:border-box;
+    -ms-background-origin:border-box;
+    background-origin: border-box;
+}
+.origin02{/**从内边距开始作为起点**/
+    background: orange url('../img/1.jpg') no-repeat left top;
+    -webkit-background-origin:padding-box;
+    -moz-background-origin:padding-box;
+    -o-background-origin:padding-box;
+    -ms-background-origin:padding-box;
+    background-origin: padding-box;
+}
+.origin03{/**从内容开始作为起点**/
+    background: orange url('../img/1.jpg') no-repeat left top;
+    -webkit-background-origin:content-box;
+    -moz-background-origin:content-box;
+    -o-background-origin:content-box;
+    -ms-background-origin:content-box;
+    background-origin: content-box;
+}
+
+/**
+css3背景裁剪属性background-clip：用来定义背景图像的裁剪区域
+    属性值：
+        border-box:背景图片在边框下;
+        padding-box:背景图片延伸到padding的外边缘，但是不超出边框的范围;
+        content-box:背景仅仅在内容区域绘制;
+    背景在整个盒模型中是布满整个盒子区域的，并不是从内部补白开始
+    默认值是border-box,当background-repeat:no-repeat时，background-color铺满整个盒模型，但是background-image是从内部补白开始的.
+    background-repeat:repeat时,background-color和background-image是完全重合的
+***/
+.origin04{/****/
+    background: orange url('../img/1.jpg') no-repeat left top;
+    -webkit-background-clip:border-box;
+    -moz-background-clip:border-box;
+    -o-background-clip:border-box;
+    -ms-background-clip:border-box;
+    background-clip: border-box;
+}
+.origin05{/****/
+    background: orange url('../img/1.jpg') repeat left top;
+    -webkit-background-clip:border-box;
+    -moz-background-clip:border-box;
+    -o-background-clip:border-box;
+    -ms-background-clip:border-box;
+    background-clip: border-box;
+}
+.origin06{/**从内边距开始作为起点**/
+    background: orange url('../img/1.jpg') no-repeat left top;
+    -webkit-background-clip:padding-box;
+    -moz-background-clip:padding-box;
+    -o-background-clip:padding-box;
+    -ms-background-clip:padding-box;
+    background-clip: padding-box;
+}
+.origin07{/**从内边距开始作为起点**/
+    background: orange url('../img/1.jpg') repeat left top;
+    -webkit-background-clip:padding-box;
+    -moz-background-clip:padding-box;
+    -o-background-clip:padding-box;
+    -ms-background-clip:padding-box;
+    background-clip: padding-box;
+}
+.origin08{/**从内边距开始作为起点**/
+    background: orange url('../img/1.jpg') no-repeat left top;
+    -webkit-background-clip:content-box;
+    -moz-background-clip:content-box;
+    -o-background-clip:content-box;
+    -ms-background-clip:content-box;
+    background-clip: content-box;
+}
+.origin09{/**从内边距开始作为起点**/
+    background: orange url('../img/1.jpg') repeat left top;
+    -webkit-background-clip:content-box;
+    -moz-background-clip:content-box;
+    -o-background-clip:content-box;
+    -ms-background-clip:content-box;
+    background-clip: content-box;
+}
 
 
 
