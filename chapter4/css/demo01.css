@@ -113,11 +113,42 @@ css3背景裁剪属性background-clip：用来定义背景图像的裁剪区域
     -ms-background-clip:content-box;
     background-clip: content-box;
 }
-
-
-
-
-
+/**
+background-size属性:指定背景图片的尺寸，值有auto,length,perentage,cover,contain;
+    contain==auto 100%
+    cover==100% auto
+**/
+.origin12{
+    width:760px;
+    height: 400px;
+    background: pink url('../img/1.jpg') no-repeat left top;
+    background-size: auto;
+}
+.origin11{
+    width:760px;
+    height: 400px;
+    background: pink url('../img/1.jpg') no-repeat left top;
+    background-size: 300px 300px;
+}
+.origin10{
+    width:760px;
+    height: 400px;
+    background: pink url('../img/1.jpg') no-repeat left top;
+    background-size: 100% 80%;
+}
+.origin13{
+    width:760px;
+    height: 400px;
+    background: pink url('../img/1.jpg') no-repeat left top;
+    background-size: cover;
+    /*background-position: center;*/
+}
+.origin14{
+    width:760px;
+    height: 400px;
+    background: pink url('../img/1.jpg') no-repeat left top;
+    background-size: auto 100%;
+}
 
 
 
