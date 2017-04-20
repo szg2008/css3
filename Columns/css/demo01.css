@@ -1,0 +1,41 @@
+/**
+	Columns：主要应用在文本的多列布局方面
+**/
+.columns{
+	padding: 5px;
+	border: 1px solid green;
+  	width: 900px;
+  	height: 320px;
+  	margin: 20px auto;
+  	-webkit-column-width:200px;/*列宽*/
+  	-moz-column-width:200px;
+  	-o-column-width:200px;
+  	-ms-column-width:200px;
+  	column-width:200px;
+  	-webkit-column-count:3;/*列的个数*/
+  	-moz-column-count:3;
+  	-o-column-count:3;
+  	-ms-column-count:3;
+  	column-count:3;
+  	-webkit-column-gap:20px;/*列间距*/
+  	-moz-column-gap:20px;
+  	-o-column-gap:20px;
+  	-ms-column-gap:20px;
+  	column-gap:20px;
+  	-webkit-column-rule:2px solid red;/*列之间的边框样式*/
+  	-moz-column-rule:2px solid red;
+  	-o-column-rule:2px solid red;
+  	-ms-column-rule:2px solid red;
+  	column-rule:2px solid red;
+}
+.columns h2{
+	-webkit-column-span:all;/*定义个分列元素中的子元素能跨列多少*/
+	-moz-column-span:all;
+	-o-column-span:all;
+	-ms-column-span:all;
+	column-span:all;
+	background-color:blue;
+	color:#fff;
+	padding:10px;
+	text-align: center;
+}
