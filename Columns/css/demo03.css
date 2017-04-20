@@ -1,0 +1,14 @@
+/*
+Flex:弹性布局
+*/
+.box{
+	width:200px;
+	height:200px;
+	border:1px solid #ccc;
+	border-radius: 20%;
+	padding:20px;
+	margin:20px auto;
+	-webkit-display:flex;
+	display:flex;
+	justify-content: center;
+}
