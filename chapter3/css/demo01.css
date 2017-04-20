@@ -21,7 +21,7 @@ li{
 	border:1px solid #ccc;
 }
 ul>li:first-child{
-	border:2px dotted red;
+	border:2px dotted #9bff52;
 }
 ul>li:nth-child(2){
 	border:2px dashed green;
