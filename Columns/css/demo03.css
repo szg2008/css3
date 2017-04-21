@@ -1,14 +1,61 @@
 /*
 Flex:弹性布局
+	flex-direction:Flex容器的排列方向;
+	flex-wrap:对排列进行自动换行;
+	justify-content:项目在主轴上的对齐方式;
+	align-items:项目在交叉轴上的对齐方式;
+	align-content:定义多根轴线的对齐方式;
+	flex-basis:属性定义了在分配多余空间之前，项目占据的主轴空间;
 */
-.box{
-	width:200px;
-	height:200px;
-	border:1px solid #ccc;
-	border-radius: 20%;
-	padding:20px;
+.wrap{
+	width:960px;
 	margin:20px auto;
-	-webkit-display:flex;
+	border:1px solid red;
 	display:flex;
-	justify-content: center;
+	flex-wrap:wrap;
+}
+.container{
+	width:120px;
+	height: 120px;
+	margin:20px auto;
+	border:2px dashed #ff9a00;
+	border-radius: 10%;
+	padding:20px;
+	display:flex;
+}
+.item2{justify-content:center;}
+.item3{justify-content:flex-end;}
+.item4{align-items:center;}
+.item5{justify-content:center;align-items:center;}
+.item6{justify-content:flex-end;align-items:center;}
+.item7{justify-content:flex-start;align-items:flex-end;}
+.item8{justify-content:center;align-items:flex-end;}
+.item9{justify-content:flex-end;align-items:flex-end;}
+.item10{justify-content:space-between;}
+.item11{justify-content:space-between;align-items:center;}
+.item12{justify-content:space-between;align-items:flex-end;}
+.item13{justify-content:space-between;flex-direction:column;}
+.item14{justify-content:space-between;flex-direction:column;align-items:center;}
+.item15{justify-content:space-between;flex-direction:column;align-items:flex-end;}
+.item16 .box:nth-child(2){align-self:center;}
+.item17{justify-content:space-between;}
+.item17 .box:nth-child(2){align-self:flex-end;}
+.item18{justify-content:flex-end;align-items:center;}
+.item18 .box:nth-child(2){align-self:flex-end;}
+.item19 .box:nth-child(2){align-self:center;}
+.item19 .box:nth-child(3){align-self:flex-end;}
+.item20{justify-content:flex-start;}
+.item21{align-items:center;}
+.item22{align-items:flex-end;}
+.item23{flex-wrap:wrap;justify-content:flex-end;align-content:space-between;}
+.item24{flex-wrap:wrap;align-content:space-between;}
+.item24 .column{flex-basis:100%;display: flex;justify-content:space-between;}
+.box{
+	width:40px;
+	height:40px;
+	border:2px solid #ccc;
+	border-radius: 50%;
+	padding:10px;
+	box-sizing:border-box;
+	text-align: center;
 }
